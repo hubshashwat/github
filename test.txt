@@ -1,0 +1,52 @@
+Steps to login:
+
+aws sso login —profile=prod
+az login
+kubectl config set current-context prod-i3 or kubectl config set-context dev-blue   
+
+Get all pods
+
+kubectl get pods -n data-platform
+
+Get all deployments
+
+kubectl get deployments -n data-platform
+
+Describe a particular deployment
+
+kubectl describe deployments aries-bloomberg-poll-worker -n data-platform
+
+Bring all logs live on the terminal
+
+stern aries-slack-chat-poll-worker-86f557995c-xfppc -n data-platform
+
+Get all helm releases
+
+kubectl get hr -n data-platform
+
+Describe a particular helm-release
+
+kubectl describe helmreleases cloud9-voice -n data-platform
+
+
+How do you run k9s?  By running a commond k9s -n data-platform
+
+
+Filter Views:
+* Use arrow keys to move between resources or type :pods to go directly to pod view. or :deployments to go directly for deployment view
+
+Filter Resources:
+* Press / and enter a filter term to narrow down the list of resources.
+
+View Logs:
+* Select a pod and press l to view its logs.
+
+Exec into a Pod:
+* Select a pod and press s to exec into it for shell access.
+
+Page Up and Page Down:
+* Press Ctrl + F to page down and Ctrl + B to page up.
+
+Search within Logs:
+* Press / to activate the search bar within the logs.
+* Type a search term to find specific content within the logs.
