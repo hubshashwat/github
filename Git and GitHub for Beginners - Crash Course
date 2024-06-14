@@ -1,0 +1,37 @@
+SOurce: Youtube - FreeCodeCamp
+
+q: what is git?
+a: free version control system
+
+q: what is version control?
+a: essentially saving and managing multiple versions of our code and information
+
+q: what is a repository?
+a: it's like a folder where your project is kept.
+
+
+set-up git for cloning a repo:
+
+shashwat@lubuntu:~/Desktop/repos$ git config --global user.name "torpidsnake"
+shashwat@lubuntu:~/Desktop/repos$ git config --global user.email "forwardtoshashwat@gmail.com"
+shashwat@lubuntu:~/Desktop/repos$ git config --list
+user.name=torpidsnake
+user.email=forwardtoshashwat@gmail.com
+
+set your classic token at https://github.com/settings/tokens
+
+now clone the repo by git clone https://{TOKEN}@github.com/{USERNAME}/{REPO}.git
+
+how to set-up ssh key?
+to-do
+
+undo staging (git add . is undo-ed here)
+git reset or git reset filename
+
+undo commit (git commit is undo-ed here)
+git reset HEAD~1
+
+git log (reverse chronological order -> see all logs)
+
+also, you can reset to a specific hash value in git log -> git reset hashvalue
+
