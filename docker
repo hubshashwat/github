@@ -1,0 +1,14 @@
+q: why do u need docker?
+a: diff os, diff versions in dependencies, long setup time for different dev/test/prod env
+
+q: what are containers?
+a: docker leverages containers  
+
+
+docker run container_name -> start a container
+docker ps -> list all containers that are running
+docker ps -a --> shows even the stopped containers
+docker stop container_name -> stop a container
+docker rm container_name -> remove a container from memory
+docker images -> list all images of docker
+docker rmi image_name -> remove a image
